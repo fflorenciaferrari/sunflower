@@ -1,0 +1,14 @@
+footer {
+  background-color: #000;
+  width: 100%;
+  height: 50vh;
+  margin-top: 500px;
+}
+footer .uno {
+  background-color: red;
+}
+footer .uno .dos {
+  background-color: blue;
+}
+
+/*# sourceMappingURL=main.css.map */

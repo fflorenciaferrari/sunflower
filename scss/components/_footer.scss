@@ -1,0 +1,14 @@
+footer {
+    background-color: #000;
+    width: 100%;
+    height: 50vh;
+    margin-top: 500px;
+
+    .uno {
+        background-color: red;
+
+        .dos{
+            background-color: blue;
+        }
+    }
+}
