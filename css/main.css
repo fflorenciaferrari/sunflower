@@ -1,14 +1,50 @@
-footer {
-  background-color: #000;
+header .cartel-envio {
+  background-color: #EFE2FC;
   width: 100%;
-  height: 50vh;
-  margin-top: 500px;
+  display: flex;
+  justify-content: center;
 }
-footer .uno {
-  background-color: red;
+header .container-logo {
+  background-color: #7E61D7;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
 }
-footer .uno .dos {
-  background-color: blue;
+header .logo {
+  width: 60px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+header .container-nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+}
+header .container-fav {
+  margin-left: 20px;
+  display: flex;
+  gap: 20px;
+}
+header .nav {
+  display: flex;
+  gap: 50px;
+}
+header .enlace {
+  text-decoration-line: none;
+  color: #7E61D7;
+}
+header .container-log {
+  display: flex;
+  margin-right: 30px;
+  gap: 20px;
+}
+
+.body {
+  background-color: #EFE2FC;
 }
 
 /*# sourceMappingURL=main.css.map */
