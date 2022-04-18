@@ -47,4 +47,10 @@ header .container-log {
   background-color: #EFE2FC;
 }
 
+main .form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 /*# sourceMappingURL=main.css.map */
