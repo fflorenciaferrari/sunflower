@@ -1,5 +1,6 @@
 
 header {
+        
         .cartel-envio {
             background-color:$cartel-envio;
             width:100%;
@@ -25,11 +26,8 @@ header {
             justify-content: center;
             }
 
-        .container-nav{
-            width:100%;
-            background-color:#ffff;
-            display: flex;
-            justify-content: space-between;
+        .navbar{
+            background-color:rgba(103, 111, 224, 0.705);
             box-shadow: -3px 4px 9px -1px rgba(126,97,215,0.71);
             -webkit-box-shadow: -3px 4px 9px -1px rgba(126,97,215,0.71);
             -moz-box-shadow: -3px 4px 9px -1px rgba(126,97,215,0.71);
@@ -39,15 +37,11 @@ header {
                 display: flex;
                 gap: 20px;
                 
-            }
-                .nav{
-                    display: flex;
-                    gap: 50px;  
+            }   
+            .enlace{
+                text-decoration-line: none;
+                color:$caja-logo ;  
                 }
-                    .enlace{
-                        text-decoration-line: none;
-                        color:$caja-logo ;  
-                    }
         .container-log{
             display: flex;
             margin-right: 30px;

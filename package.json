@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/fflorenciaferrari/sunflower/issues"
   },
-  "homepage": "https://github.com/fflorenciaferrari/sunflower#readme"
+  "homepage": "https://github.com/fflorenciaferrari/sunflower#readme",
+  "dependencies": {
+    "bootstrap-icons": "^1.8.1"
+  }
 }
