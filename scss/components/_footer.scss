@@ -1,82 +1,66 @@
 footer{
-    background-color: #fff;
+    background-color: $col-blanco;
     
     .caja-ig{
-        margin-top: 20px;
+        margin-top: $medida-px;
         margin-left: 30px;
     }
         .ig{
-            background-color: #ffff;
+            background-color: $col-blanco;
             height:auto;
             width: 100%;
-            display: flex;
+            display: map-get($usadas,"flex");
             flex-direction: column;
-            gap: 20px;
+            gap: $medida-px;
             
         }
             .ig-redes{
-                text-decoration: none;
+                @extend %text;
                 height: 50%;
                 width: 100%;
-                color: #000;
-                margin-top: 20px;
+                color: $col-negro;
+                margin-top: $medida-px;
+                
                 
             }
             .text-ig{
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                color: #000;
+                @include flexible (flex, center);
+                display: map-get($usadas,"center");
+                color: $col-negro;
+                gap: 20px;
             
             }
     .caja-nav{
-        gap: 20px;
-        margin-left: 20px;
-
+        gap: $medida-px;
+        margin-left: $medida-px;
     }
         .navegador{
             margin-top: 10px;
             margin-bottom: 10px;
         }
             a{
-            text-decoration: none;
-            list-style: none;
-            color: #000;
+            @extend %text;
+            color: $col-negro;
         }
             .nav-footer{
                 margin-top: 10px;
                 margin-bottom: 10px; 
-                text-decoration: none;
-                list-style: none;
+                @extend %text;
             }
             
-
-
-
-
-
-
-
-
-
-
     .caja-redes{
-        display: flex;
+        display: map-get($usadas,"flex");
         margin-left: 10px;
-        
 
     }
         .redes{
             margin-top: 10px;
-            margin-bottom: 20px;
             display: flex;
-            gap: 20px;
-            text-decoration: none;
-            list-style: none;
+            gap: $medida-px;
+            @extend %text;
         }
             .redes-sociales{
-            text-decoration: none;
-            list-style: none;
+            @extend %text;
             }  
     
 }

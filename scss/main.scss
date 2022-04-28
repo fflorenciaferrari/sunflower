@@ -1,4 +1,7 @@
-@import "components/var";
+@import "base/var";
+@import "base/mixin";
+@import "base/extend";
+@import"base/mapas";
 @import "components/header";
 @import "components/body";
 @import "components/main";
