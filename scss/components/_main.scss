@@ -30,8 +30,6 @@ main{
             height: 30px;
             width: 90px;
             @extend %text;
-            
-            
 
             
             }
@@ -54,9 +52,6 @@ main{
             font-size: 25px;
             color: $col-negro;
         }
-        
-        
-
         
         .categoria{
             opacity: 0.5;

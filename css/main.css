@@ -137,6 +137,11 @@ main .boton-caja {
 footer {
   background-color: #fff;
 }
+footer .espacio {
+  background-color: #EFE2FC;
+  width: auto;
+  height: 250px;
+}
 footer .caja-ig {
   margin-top: 20px;
   margin-left: 30px;

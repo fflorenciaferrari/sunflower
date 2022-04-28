@@ -1,6 +1,11 @@
 footer{
-    background-color: $col-blanco;
     
+    .espacio{
+        background-color: $color-body;
+        width: auto;
+        height: 250px;
+        }
+    background-color: $col-blanco;
     .caja-ig{
         margin-top: $medida-px;
         margin-left: 30px;
