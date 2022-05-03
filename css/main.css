@@ -3,6 +3,20 @@ footer .redes-sociales, footer .redes, footer .nav-footer, footer a, footer .ig-
   list-style: none;
 }
 
+@media (max-width: 767px) {
+  .containerCards {
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(2, 1fr) !important;
+  }
+}
+section .caja-fondo {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(rgba(0, 0, 0, 0.411), rgba(0, 0, 0, 0.425)), url("../img/comunidad.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 header .cartel-envio {
   background-color: #EFE2FC;
   width: 100%;
@@ -44,6 +58,55 @@ header .enlace {
 header .container-log {
   margin-right: 30px;
   gap: 20px;
+}
+
+.title-cards {
+  text-align: center;
+  margin-top: 2rem !important;
+}
+
+.containerCards {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 3rem;
+  margin-top: 5rem !important;
+}
+.containerCards .card {
+  gap: 2rem !important;
+  background-color: #EFE2FC;
+}
+.containerCards .card:hover {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.containerCards .card .card-info {
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0rem;
+}
+.containerCards .card .card-info .card-info-p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+.containerCards .card .card-info .card-info-p .card-text {
+  color: rgb(27, 27, 27);
+  font-size: 1.125rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: weight(medium);
+}
+.containerCards .card .card-info .card-icon {
+  display: flex;
+  align-self: center;
+}
+.containerCards .card .card-info .card-icon:hover {
+  color: #7E61D7;
+  transition: all 0.2s ease-in-out;
 }
 
 .body {

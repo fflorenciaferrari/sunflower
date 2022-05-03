@@ -1,0 +1,6 @@
+@media (max-width: 767px) {
+.containerCards {
+    grid-template-columns: repeat(2,1fr) !important;
+    grid-template-rows: repeat(2,1fr) !important;
+}
+}
