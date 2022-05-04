@@ -1,15 +1,20 @@
 
 header {
-        
-        
         .cartel-envio {
             background-color:$cartel-envio;
-            width:100%;
+            width:100vW;
             @include flexible(flex , center);
+                .cartel-p{
+                    font-size: 0.8rem;
+                    text-align: center;
+    
+                    
+                 
+                }
         }
         .container-logo{
             background-color: $caja-logo;
-            width: 100%;
+            width: 100vw;
             height: auto;
             @include flexible(flex, center);
             box-shadow: -2px -6px 18px -1px rgba(126,97,215,0.71);

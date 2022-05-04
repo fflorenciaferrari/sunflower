@@ -1,4 +1,4 @@
-footer .redes-sociales, footer .redes, footer .nav-footer, footer a, footer .ig-redes, main .boton {
+main .boton {
   text-decoration: none;
   list-style: none;
 }
@@ -7,6 +7,17 @@ footer .redes-sociales, footer .redes, footer .nav-footer, footer a, footer .ig-
   .containerCards {
     grid-template-columns: repeat(2, 1fr) !important;
     grid-template-rows: repeat(2, 1fr) !important;
+  }
+}
+@media (max-width: 1018px) {
+  .caja-ig .ig .text-ig {
+    font-size: 0.938rem;
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .cartel-p {
+    display: none;
   }
 }
 section .caja-fondo {
@@ -19,13 +30,17 @@ section .caja-fondo {
 
 header .cartel-envio {
   background-color: #EFE2FC;
-  width: 100%;
+  width: 100vW;
   display: flex;
   justify-content: center;
 }
+header .cartel-envio .cartel-p {
+  font-size: 0.8rem;
+  text-align: center;
+}
 header .container-logo {
   background-color: #7E61D7;
-  width: 100%;
+  width: 100vw;
   height: auto;
   display: flex;
   justify-content: center;
@@ -63,6 +78,7 @@ header .container-log {
 .title-cards {
   text-align: center;
   margin-top: 2rem !important;
+  font-family: "Poppins", sans-serif;
 }
 
 .containerCards {
@@ -120,7 +136,7 @@ header .container-log {
 
 main .ni {
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 main .form {
   display: flex;
@@ -129,7 +145,7 @@ main .form {
 }
 main .title {
   text-align: center;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 20px;
   margin-bottom: 40px;
 }
@@ -157,7 +173,7 @@ main .caja-texto {
 }
 main .descrip {
   font-size: small;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 main .text {
   display: flex;
@@ -165,9 +181,10 @@ main .text {
   align-items: center;
 }
 main .card-title {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: weight(medium);
   font-size: 25px;
-  color: #000;
+  color: #fff;
 }
 main .categoria {
   opacity: 0.5;
@@ -197,59 +214,70 @@ main .boton-caja {
   justify-content: space-evenly;
 }
 
-footer {
-  background-color: #fff;
-}
 footer .espacio {
   background-color: #EFE2FC;
   width: auto;
-  height: 250px;
+  height: 10rem;
 }
-footer .caja-ig {
-  margin-top: 20px;
-  margin-left: 30px;
+footer .contenedor-footer {
+  width: 100vw;
+  height: 70vh;
 }
-footer .ig {
+footer .contenedor-footer .caja-ig .ig {
+  height: 30vh;
   background-color: #fff;
-  height: auto;
-  width: 100%;
-  flex-direction: column;
-  gap: 20px;
-}
-footer .ig-redes {
-  height: 50%;
-  width: 100%;
-  color: #000;
-  margin-top: 20px;
-}
-footer .text-ig {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+footer .contenedor-footer .caja-ig .ig .ig-redes {
+  text-decoration: none;
   color: #000;
-  gap: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: weight(light);
 }
-footer .caja-nav {
-  gap: 20px;
-  margin-left: 20px;
+footer .contenedor-footer .caja-ig .ig .ig-redes :hover {
+  color: #7E61D7;
+  transition: all 0.2s ease-in-out;
 }
-footer .navegador {
-  margin-top: 10px;
-  margin-bottom: 10px;
+footer .contenedor-footer .section-nav {
+  background-color: #EAEAEA;
+  height: 40vh;
 }
-footer a {
+footer .contenedor-footer .section-nav .caja-nav .navegador {
+  text-align: left;
+  padding-top: 2rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  list-style-type: none;
   color: #000;
+  font-family: "Roboto", sans-serif;
+  font-weight: weight(light);
 }
-footer .nav-footer {
-  margin-top: 10px;
-  margin-bottom: 10px;
+footer .contenedor-footer .section-nav .caja-nav .navegador .nav-footer {
+  margin-top: 0.5rem;
 }
-footer .caja-redes {
-  margin-left: 10px;
+footer .contenedor-footer .section-nav .caja-nav .navegador .nav-footer .text-enlace {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto", sans-serif;
+  font-weight: weight(light);
 }
-footer .redes {
-  margin-top: 10px;
+footer .contenedor-footer .section-nav .caja-nav .navegador .nav-footer .text-enlace:hover {
+  color: #7E61D7;
+  transition: all 0.2s ease-in-out;
+}
+footer .contenedor-footer .section-nav .caja-redes {
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+footer .contenedor-footer .section-nav .caja-redes .redes {
+  text-decoration: none;
+  list-style-type: none;
   display: flex;
-  gap: 20px;
+  gap: 1rem;
 }
 
 /*# sourceMappingURL=main.css.map */

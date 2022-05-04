@@ -4,3 +4,21 @@
     grid-template-rows: repeat(2,1fr) !important;
 }
 }
+@media (max-width: 1018px){
+    .caja-ig{
+        .ig{
+            .text-ig{
+                font-size: $fs-quinto;
+                text-align: center;
+            }
+            
+        }
+    }
+}
+
+@media (max-width: 350px){
+    .cartel-p{
+        display: none;
+    }
+}
+
